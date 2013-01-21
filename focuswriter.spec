@@ -3,13 +3,13 @@ Version:	1.4.1
 Release:	%mkrel 1
 Summary:	A full-screen, distraction-free writing program
 
-Group:		Office/Word processor
+Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 
-BuildRequires:	libzip-devel
-BuildRequires:	qt4-devel >= 4.6
+BuildRequires:	libzip
+BuildRequires:  qt4-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
 
@@ -24,14 +24,14 @@ work-in-progress will automatically load and position you at the end
 of your document, so that you can immediately jump back in.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %qmake_qt4 PREFIX=%{_prefix}
-%make %{?_smp_mflags}
+%make
 
 %install
-%makeinstall INSTALL_ROOT=%{buildroot}
+make install INSTALL_ROOT=%{buildroot}
 
 %files
 %defattr(-,root,root,-)
@@ -41,7 +41,6 @@ of your document, so that you can immediately jump back in.
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/pixmaps/%{name}.xpm
-
 
 %changelog
 
