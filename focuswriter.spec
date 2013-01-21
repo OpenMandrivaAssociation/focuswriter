@@ -46,28 +46,5 @@ of your document, so that you can immediately jump back in.
 %changelog
 
 * Fri Jan 11 2013 umeabot <umeabot> 1.4.1-2.mga3
-+ Revision: 350615
-- Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild
-
-* Thu Jan 03 2013 vaci0 <vaci0> 1.4.1-1.mga3
-+ Revision: 338332
-- Updated to version 1.4.1
-
-* Mon Oct 22 2012 dams <dams> 1.4.0-1.mga3
-+ Revision: 309258
-- udpate %%group
-- new version 1.4.0
-
-* Sat Sep 08 2012 vaci0 <vaci0> 1.3.90-1.mga3
-+ Revision: 289690
-- Updated to version 1.3.90
-
-* Wed Aug 15 2012 vaci0 <vaci0> 1.3.80-1.mga3
-+ Revision: 281443
-- Added BuildRequires enchant-devel
--Update to new version 1.3.80
-
-* Fri Jul 27 2012 vaci0 <vaci0> 1.3.6-1.mga3
-+ Revision: 274774
-- imported package focuswriter
-
+- Initial commit
+- Cleaned SPEC
