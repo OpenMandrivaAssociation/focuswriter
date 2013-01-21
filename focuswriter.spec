@@ -1,6 +1,6 @@
 Name:		focuswriter
 Version:	1.4.1
-Release:	%mkrel 2
+Release:	%mkrel 1
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Office/Word processor
@@ -45,6 +45,6 @@ of your document, so that you can immediately jump back in.
 
 %changelog
 
-* Fri Jan 11 2013 umeabot <umeabot> 1.4.1-2.mga3
+* Mon Jan 21 2013 Eugene Budanov <eugene.budanov@rosalab.ru> 1.4.1-1
 - Initial commit
 - Cleaned SPEC
