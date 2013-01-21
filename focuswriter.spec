@@ -8,7 +8,7 @@ License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 
-BuildRequires:	libzip
+BuildRequires:	libzip-devel
 BuildRequires:  qt4-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
