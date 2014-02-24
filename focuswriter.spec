@@ -1,6 +1,6 @@
 Name:		focuswriter
-Version:	1.4.1
-Release:	%mkrel 1
+Version:	1.4.4
+Release:	1
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Editors
@@ -8,10 +8,10 @@ License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 
-BuildRequires:	libzip-devel
-BuildRequires:  qt4-devel
-BuildRequires:	hunspell-devel
-BuildRequires:	enchant-devel
+BuildRequires:	pkgconfig(libzip)
+BuildRequires:  pkgconfig(QtCore)
+BuildRequires:	pkgconfig(enchant)
+BuildRequires:	pkgconfig(hunspell)
 
 %description
 A full-screen, distraction-free writing program. 
@@ -44,6 +44,3 @@ make install INSTALL_ROOT=%{buildroot}
 
 %changelog
 
-* Mon Jan 21 2013 Eugene Budanov <eugene.budanov@rosalab.ru> 1.4.1-1
-- Initial commit
-- Cleaned SPEC
