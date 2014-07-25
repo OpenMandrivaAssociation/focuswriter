@@ -1,6 +1,6 @@
 Name:		focuswriter
 Version:	1.4.4
-Release:	1
+Release:	2
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Editors
