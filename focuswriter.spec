@@ -1,6 +1,6 @@
 Name:		focuswriter
-Version:	1.4.4
-Release:	2
+Version:	1.5.3
+Release:	1
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Editors
@@ -38,9 +38,11 @@ make install INSTALL_ROOT=%{buildroot}
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
+%{_datadir}/appdata/focuswriter.appdata.xml
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/pixmaps/%{name}.xpm
+%{_mandir}/man1/focuswriter.1.xz
 
 %changelog
 
