@@ -1,6 +1,6 @@
 Name:		focuswriter
-Version:	1.4.1
-Release:	%mkrel 1
+Version:	1.5.4.1
+Release:	1
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Editors
@@ -41,9 +41,5 @@ make install INSTALL_ROOT=%{buildroot}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/pixmaps/%{name}.xpm
-
-%changelog
-
-* Mon Jan 21 2013 Eugene Budanov <eugene.budanov@rosalab.ru> 1.4.1-1
-- Initial commit
-- Cleaned SPEC
+%{_datadir}/appdata/*
+%{_mandir}/man1/%{name}.*
