@@ -1,5 +1,5 @@
 Name:		focuswriter
-Version:	1.5.4.1
+Version:	1.5.7
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
