@@ -15,6 +15,7 @@ BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
 BuildRequires:	pkgconfig(Qt5Multimedia)
+BuildRequires:	cmake(Qt5LinguistTools)
 
 %description
 A full-screen, distraction-free writing program. 
