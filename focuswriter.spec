@@ -9,6 +9,7 @@ Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+Patch1:		focuswriter-1.6.7-qtversion.patch
 
 BuildRequires:	libzip-devel
 BuildRequires:  qt5-devel
@@ -29,6 +30,7 @@ of your document, so that you can immediately jump back in.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %qmake_qt5 PREFIX=%{_prefix}
