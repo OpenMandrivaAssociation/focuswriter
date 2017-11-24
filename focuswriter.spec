@@ -14,6 +14,7 @@ BuildRequires:	libzip-devel
 BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
+BuildRequires:	pkgconfig(Qt5Multimedia)
 
 %description
 A full-screen, distraction-free writing program. 
