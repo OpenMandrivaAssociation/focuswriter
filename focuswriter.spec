@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.6.7
+Version:	1.6.10
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
@@ -9,7 +9,6 @@ Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
-Patch1:		focuswriter-1.6.7-qtversion.patch
 
 BuildRequires:	libzip-devel
 BuildRequires:  qt5-devel
