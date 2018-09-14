@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.6.10
+Version:	1.6.16
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
