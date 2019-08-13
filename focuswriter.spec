@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.7.2
+Version:	1.7.3
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
@@ -34,10 +34,10 @@ of your document, so that you can immediately jump back in.
 
 %build
 %qmake_qt5 PREFIX=%{_prefix}
-%make
+%make_build
 
 %install
-make install INSTALL_ROOT=%{buildroot}
+%make_install INSTALL_ROOT=%{buildroot}
 
 %files
 %{_bindir}/%{name}
