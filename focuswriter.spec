@@ -30,7 +30,7 @@ of your document, so that you can immediately jump back in.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %qmake_qt5 PREFIX=%{_prefix}
