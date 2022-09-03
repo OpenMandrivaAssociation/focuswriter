@@ -8,7 +8,7 @@ Summary:	A full-screen, distraction-free writing program
 Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
-Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+Source:		http://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
 BuildRequires:	libzip-devel
 BuildRequires:  qt5-devel
