@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.8.2
+Version:	1.8.3
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
@@ -10,6 +10,7 @@ License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
+BuildRequires:  cmake
 BuildRequires:	libzip-devel
 BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
@@ -33,11 +34,11 @@ of your document, so that you can immediately jump back in.
 %autopatch -p1
 
 %build
-%qmake_qt5 PREFIX=%{_prefix}
+%cmake
 %make_build
 
 %install
-%make_install INSTALL_ROOT=%{buildroot}
+%make_install -C build
 
 %files
 %{_bindir}/%{name}
