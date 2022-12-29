@@ -11,12 +11,23 @@ URL:		http://gottcode.org/%{name}/
 Source:		http://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
 BuildRequires:  cmake
+BuildRequires:	cmake(qt6)
+BuildRequires:	qmake-qt6
 BuildRequires:	libzip-devel
-BuildRequires:  qt5-devel
+#BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
-BuildRequires:	pkgconfig(Qt5Multimedia)
-BuildRequires:	cmake(Qt5LinguistTools)
+BuildRequires:	cmake(Qt6Multimedia)
+BuildRequires:	cmake(Qt6LinguistTools)
+BuildRequires:	cmake(Qt6Concurrent)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Gui)
+BuildRequires:	cmake(Qt6Network)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6Test)
+BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(zlib)
 
 %description
