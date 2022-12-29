@@ -1,22 +1,37 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.7.6
+Version:	1.8.3
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 
 Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
-Source:		http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+Source:		http://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
+BuildRequires:  cmake
+BuildRequires:	cmake(qt6)
+BuildRequires:	qmake-qt6
 BuildRequires:	libzip-devel
-BuildRequires:  qt5-devel
+#BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
-BuildRequires:	pkgconfig(Qt5Multimedia)
-BuildRequires:	cmake(Qt5LinguistTools)
+BuildRequires:	cmake(Qt6Multimedia)
+BuildRequires:	cmake(Qt6LinguistTools)
+BuildRequires:	cmake(Qt6Concurrent)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Gui)
+BuildRequires:	cmake(Qt6Network)
+BuildRequires:  cmake(Qt6PrintSupport)
+BuildRequires:	cmake(Qt6Sql)
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6Test)
+BuildRequires:  cmake(VulkanHeaders)
+BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:  pkgconfig(xkbcommon-x11)
 
 %description
 A full-screen, distraction-free writing program. 
@@ -33,11 +48,11 @@ of your document, so that you can immediately jump back in.
 %autopatch -p1
 
 %build
-%qmake_qt5 PREFIX=%{_prefix}
+%cmake
 %make_build
 
 %install
-%make_install INSTALL_ROOT=%{buildroot}
+%make_install -C build
 
 %files
 %{_bindir}/%{name}
@@ -45,6 +60,6 @@ of your document, so that you can immediately jump back in.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
-%{_datadir}/pixmaps/%{name}.xpm
+#{_datadir}/pixmaps/%{name}.xpm
 %{_datadir}/metainfo/*
 %{_mandir}/man1/%{name}.*
