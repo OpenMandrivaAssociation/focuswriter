@@ -60,6 +60,6 @@ of your document, so that you can immediately jump back in.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
-%{_datadir}/pixmaps/%{name}.xpm
+#{_datadir}/pixmaps/%{name}.xpm
 %{_datadir}/metainfo/*
 %{_mandir}/man1/%{name}.*
