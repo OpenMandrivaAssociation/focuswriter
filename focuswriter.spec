@@ -27,8 +27,10 @@ BuildRequires:	cmake(Qt6Network)
 BuildRequires:	cmake(Qt6Sql)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Test)
+BuildRequires:  cmake(VulkanHeaders)
 BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:  pkgconfig(xkbcommon-x11)
 
 %description
 A full-screen, distraction-free writing program. 
