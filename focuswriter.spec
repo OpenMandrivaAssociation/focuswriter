@@ -1,10 +1,9 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.8.5
+Version:	1.8.6
 Release:	1
 Summary:	A full-screen, distraction-free writing program
-
 Group:		Editors
 License:	GPLv3+
 URL:		http://gottcode.org/%{name}/
