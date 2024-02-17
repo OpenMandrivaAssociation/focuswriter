@@ -2,7 +2,7 @@
 
 Name:		focuswriter
 Version:	1.8.6
-Release:	1
+Release:	2
 Summary:	A full-screen, distraction-free writing program
 Group:		Editors
 License:	GPLv3+
