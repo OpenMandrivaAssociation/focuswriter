@@ -1,13 +1,13 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.8.6
-Release:	2
+Version:	1.8.8
+Release:	1
 Summary:	A full-screen, distraction-free writing program
 Group:		Editors
 License:	GPLv3+
-URL:		http://gottcode.org/%{name}/
-Source:		http://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://gottcode.org/%{name}/
+Source:		https://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
 BuildRequires:  cmake
 BuildRequires:	cmake(qt6)
