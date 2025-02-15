@@ -31,6 +31,7 @@ BuildRequires:  cmake(VulkanHeaders)
 BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:  pkgconfig(xkbcommon-x11)
+BuildRequires:  pkgconfig(hunspell)
 
 %description
 A full-screen, distraction-free writing program. 
