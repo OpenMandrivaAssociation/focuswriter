@@ -12,7 +12,7 @@ Source:		https://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:  cmake
 BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
-BuildRequires:  Gettext
+BuildRequires:  gettext
 BuildRequires:	libzip-devel
 #BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
