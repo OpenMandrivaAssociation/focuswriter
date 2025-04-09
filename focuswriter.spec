@@ -13,6 +13,7 @@ BuildRequires:  cmake
 BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
 BuildRequires:  gettext
+BuildRequires:  locales-extra-charsets
 BuildRequires:	libzip-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
