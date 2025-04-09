@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.8.10
+Version:	1.8.11
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 Group:		Editors
@@ -14,7 +14,6 @@ BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
 BuildRequires:  gettext
 BuildRequires:	libzip-devel
-#BuildRequires:  qt5-devel
 BuildRequires:	hunspell-devel
 BuildRequires:	enchant-devel
 BuildRequires:	cmake(Qt6Multimedia)
@@ -61,6 +60,5 @@ of your document, so that you can immediately jump back in.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
-#{_datadir}/pixmaps/%{name}.xpm
 %{_datadir}/metainfo/*
 %{_mandir}/man1/%{name}.*
