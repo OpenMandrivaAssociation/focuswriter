@@ -8,7 +8,6 @@ Group:		Editors
 License:	GPLv3+
 URL:		https://gottcode.org/%{name}/
 Source:		https://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
-Patch0:  https://github.com/gottcode/focuswriter/commit/dd74ed4559a141653a06e7984c1251b992925775.patch
 
 BuildRequires:  cmake
 BuildRequires:	cmake(qt6)
