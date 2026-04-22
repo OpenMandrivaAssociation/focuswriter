@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:		focuswriter
-Version:	1.8.12
+Version:	1.9.0
 Release:	1
 Summary:	A full-screen, distraction-free writing program
 Group:		Editors
