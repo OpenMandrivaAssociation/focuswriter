@@ -9,6 +9,7 @@ License:	GPLv3+
 URL:		https://gottcode.org/%{name}/
 Source:		https://gottcode.org/%{name}/%{name}-%{version}.tar.bz2
 
+BuildRequires:  make
 BuildRequires:  cmake
 BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
